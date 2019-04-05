@@ -1,11 +1,12 @@
 # isObject(arg): boolean
 
-Returns true if `arg` is array or object.
-Returns false if `arg` is null, undefined, function, number, boolean, or string.
+Returns true if `arg` is array or object.  
+Does not consider null an object.
 
 # notObject(arg): boolean
 
-Returns true if `arg` is string, boolean, number, function, null, or undefined.
+Returns true if `arg` is null, undefined, function, symbol, number, boolean,  
+or string.
 
 
 ## Installation
