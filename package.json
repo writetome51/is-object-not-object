@@ -1,0 +1,30 @@
+{
+  "name": "@writetome51/is-object-not-object",
+  "version": "1.0.0",
+  "description": "2 functions that check if passed argument is or is not an object.  Null is not considered an object",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/writetome51/is-object-not-object.git"
+  },
+  "keywords": [
+    "is",
+     "not",
+     "object",
+    "type-checking",
+    "type",
+    "check",
+    "data-type"
+  ],
+  "author": "Steve Thompson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/writetome51/is-object-not-object/issues"
+  },
+  "homepage": "https://github.com/writetome51/is-object-not-object#readme",
+  "dependencies": {
+  }
+}
