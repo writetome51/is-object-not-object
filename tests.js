@@ -1,45 +1,43 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", {value: true});
-var isObject_notObject_1 = require("./index");
+import {isObject, notObject} from './index.js';
 
 
-if (isObject_notObject_1.isObject([]))
+if (isObject([]))
 	console.log('test 1 passed');
 else
 	console.log('test 1 FAILED');
 
 
-if (isObject_notObject_1.isObject({}))
+if (isObject({}))
 	console.log('test 2 passed');
 else
 	console.log('test 2 FAILED');
 
 
-if (isObject_notObject_1.notObject(null))
+if (notObject(null))
 	console.log('test 3 passed');
 else
 	console.log('test 3 FAILED');
 
 
-if (isObject_notObject_1.notObject('asdf'))
+if (notObject('asdf'))
 	console.log('test 4 passed');
 else
 	console.log('test 4 FAILED');
 
 
-if (isObject_notObject_1.notObject(10))
+if (notObject(10))
 	console.log('test 5 passed');
 else
 	console.log('test 5 FAILED');
 
 
-if (isObject_notObject_1.notObject(true))
+if (notObject(true))
 	console.log('test 6 passed');
 else
 	console.log('test 6 FAILED');
 
 
-if (isObject_notObject_1.notObject(undefined))
+if (notObject(undefined))
 	console.log('test 7 passed');
 else
 	console.log('test 7 FAILED');
@@ -48,13 +46,13 @@ else
 // Even if string is created using String() conversion function, it's
 // not considered an object:
 var str = String('boo');
-if (isObject_notObject_1.notObject(str))
+if (notObject(str))
 	console.log('test 8 passed');
 else
 	console.log('test 8 FAILED');
 
 
-if (isObject_notObject_1.notObject(function() {
+if (notObject(function() {
 	return '';
 }))
 	console.log('test 9 passed');
@@ -63,7 +61,7 @@ else
 
 
 var sym = Symbol('r');
-if (isObject_notObject_1.notObject(sym))
+if (notObject(sym))
 	console.log('test 10 passed');
 else
 	console.log('test 10 FAILED');

@@ -1,8 +1,9 @@
 {
   "name": "@writetome51/is-object-not-object",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "2 functions that check if passed argument is or is not an object.  Null is not considered an object",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
